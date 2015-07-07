@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Core\Url</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Css.html">
+						Css					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Js.html">
+						Js					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Menu.html">
+						Menu					</a>
+
+						</li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Site.html">
+						Site					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core.Controller.html">Controller</a></li>
+				<li><a href="class-Core.Database.html">Database</a></li>
+				<li><a href="class-Core.Date.html">Date</a></li>
+				<li><a href="class-Core.File.html">File</a></li>
+				<li><a href="class-Core.Gcms.html">Gcms</a></li>
+				<li><a href="class-Core.Language.html">Language</a></li>
+				<li><a href="class-Core.ListItem.html">ListItem</a></li>
+				<li><a href="class-Core.Model.html">Model</a></li>
+				<li><a href="class-Core.Router.html">Router</a></li>
+				<li class="active"><a href="class-Core.Url.html">Url</a></li>
+				<li><a href="class-Core.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Core.html" title="Summary of Core"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Url</h1>
+
+
+	<div class="description">
+	<p>Class ศำหรับจัดการ URL ของ GCMS
+สร้างลิงค์จากโมดูลสำหรับใช้บน GCMS
+และใช้ในการแยกองค์ประกอบของ URL</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Core.html">Core</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Core.Url.html#14-140" title="Go to source code">core/url.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Core.Url.html#27-35" title="Go to source code">__construct</a>( <span>string <var>$url</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Class constructor</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Class constructor</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd>URL ที่ต้องการแยกองค์ประกอบ</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createUrl" id="_createUrl">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createUrl">#</a>
+		<code><a href="source-class-Core.Url.html#41-95" title="Go to source code">createUrl</a>( <span>string <var>$module</var></span>, <span>string <var>$document</var> = <span class="php-quote">''</span></span>, <span>integer <var>$catid</var> = <span class="php-num">0</span></span>, <span>integer <var>$id</var> = <span class="php-num">0</span></span>, <span>string <var>$query</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$encode</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้าง URL จากโมดูล</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้าง URL จากโมดูล</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$module</var></dt>
+					<dd>URL ชื่อโมดูล</dd>
+					<dt><var>$document</var></dt>
+					<dd>(option)</dd>
+					<dt><var>$catid</var></dt>
+					<dd>(option) id ของหมวดหมู่ (default 0)</dd>
+					<dt><var>$id</var></dt>
+					<dd>(option) id ของข้อมูล (default 0)</dd>
+					<dt><var>$query</var></dt>
+					<dd>(option) query string อื่นๆ (default ค่าว่าง)</dd>
+					<dt><var>$encode</var></dt>
+					<dd>(option) true=เข้ารหัสด้วย rawurlencode ด้วย (default true)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>URL ที่สร้าง
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Core.Url.html#96-106" title="Go to source code">get</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่า ตัวแปรของ url ที่กำหนด</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่า ตัวแปรของ url ที่กำหนด</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>ค่าที่อ่านได้ ถ้าไม่พบคืนค่าว่าง
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Core.Url.html#107-117" title="Go to source code">query</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่า ตัวแปรของ query string ที่กำหนด</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่า ตัวแปรของ query string ที่กำหนด</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>query string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>ค่าที่อ่านได้ ถ้าไม่พบคืนค่าว่าง
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse_url" id="_parse_url">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse_url">#</a>
+		<code><a href="source-class-Core.Url.html#118-139" title="Go to source code">parse_url</a>( )</code>
+
+		<div class="description short">
+			<p>parse url</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>parse url</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|boolean<br>คืนค่า array ของค่าที่ parse ได้ทั้งหมด ไม่สำเร็จคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

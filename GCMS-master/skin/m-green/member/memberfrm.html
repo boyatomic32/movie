@@ -1,0 +1,18 @@
+<div class=memberfrm>
+	<p class=head>{LNG_MEMBER_TITLE}</p>
+	<p class="title center">{WEBTITLE}</p>
+	<p class="subtitle center">{SUBTITLE}</p>
+	<p class=center><img id=usericon src="{WEBURL}/modules/member/usericon.php?id={ID}" alt=usericon></p>
+	<p class="center cuttext">{LNG_LOGOUT_DISPLAYNAME} <span class="sender status{STATUS}">{DISPLAYNAME}</span></p>
+	<p class=left>
+		<a class=icon-email-sent href="{WEBURL}/index.php?module=sendmail&amp;to=admin">{LNG_MAIL_TO_ADMIN}</a>
+		<a class=icon-user href="{WEBURL}/index.php?module=editprofile">{LNG_MEMBER_EDIT_TITLE}</a>
+		<a class="icon-config {ADMIN}" href="{WEBURL}/admin/index.php">{LNG_ADMIN_TITLE}</a>
+	</p>
+	<p class=right><input type=button id=login_logout value="{LNG_LOGOUT}" title="{LNG_LOGOUT_TITLE}" class="button logout"></p>
+</div>
+<script>
+	$G(window).Ready(function() {
+		callClick('login_logout', doLogout);
+	});
+</script>

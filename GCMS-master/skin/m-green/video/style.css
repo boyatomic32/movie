@@ -1,0 +1,31 @@
+.video_list .item figure {
+	display: block;
+	position: relative;
+}
+.video_list .item span {
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+.video_list .item .thumbnail {
+	background-image: url(img/play.png);
+	background-position: 50% 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.modaldiv .mv {
+	position: relative;
+	width: 560px;
+	max-width: 100%;
+}
+.modaldiv .mv figcaption {
+	padding: 10px;
+	color: #FFF;
+}

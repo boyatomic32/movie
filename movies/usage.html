@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+	
+<!-- Mirrored from plugins.adchsm.me/slidebars/usage.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jun 2015 14:54:38 GMT -->
+<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<title>Slidebars | Usage</title>
+		<meta name="description" content="Instructions on setting up and using Slidebars in your website.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="scripts/slidebars/slidebars.min.css">
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Shims -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-42666109-2', 'adchsm.html');
+		  ga('send', 'pageview');
+		
+		</script>
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:creator" content="@adchsm">
+		<meta property="og:url" content="http://plugins.adchsm.me/slidebars/">
+		<meta property="og:title" content="Slidebars">
+		<meta property="og:description" content="Slidebars is a jQuery plugin for quickly and easily implementing app-style revealing menus and sidebars into your website">
+		<meta property="og:image" content="http://plugins.adchsm.me/slidebars/images/twitter-card@2x.png">
+		
+		<!-- Web App -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!-- Favicons -->
+		<link rel="icon"
+			type="image/png"
+			href="images/icons/16.png">
+		<link rel="icon"
+			type="image/png"
+			href="images/icons/32.png"
+			sizes="32x32">
+		<link rel="icon"
+			type="image/png"
+			href="images/icons/48.png"
+			sizes="48x48">
+		<link rel="icon"
+			type="image/png"
+			href="images/icons/64.png"
+			sizes="64x64">
+		
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon"
+			href="images/icons/152.png"
+			sizes="120x120">
+		<link rel="apple-touch-icon"
+			href="images/icons/120.png"
+			sizes="152x152">
+		<link rel="apple-touch-icon"
+			href="images/icons/76.png"
+			sizes="76x76">
+		<link rel="apple-touch-icon"
+			href="images/icons/114.png"
+			sizes="114x114">
+		<link rel="apple-touch-icon"
+			href="images/icons/57.png"
+			sizes="57x57">
+		<link rel="apple-touch-icon"
+			href="images/icons/144.png"
+			sizes="144x144">
+		<link rel="apple-touch-icon"
+			href="images/icons/72.png"
+			sizes="72x72">
+			
+		<!-- Startup Images -->
+		<!-- iPhone 5, 5S, 5C -->
+		<link href="images/startup/1096.png"
+			media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image">
+		
+		<!-- iPhone 4, 4S -->
+		<link href="images/startup/920.png"
+			media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image">
+		
+		<!-- iPhone, 3G, 3GS -->
+		<link href="images/startup/460.png"
+			media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)"
+			rel="apple-touch-startup-image">
+		
+		<!-- iPad Retina, Mini Retina Portrait -->
+		<link href="images/startup/2008.png"
+			media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image">
+		
+		<!-- iPad Retina, Mini Retina Landscape -->
+		<link href="images/startup/1496.png"
+			media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+			rel="apple-touch-startup-image">
+		
+		<!-- iPad, Mini Portrait -->
+		<link href="images/startup/1004.png"
+			media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)"
+			rel="apple-touch-startup-image">
+
+		<!-- iPad, Mini Landscape -->
+		<link href="images/startup/748.png"
+			media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)"
+			rel="apple-touch-startup-image">
+	</head>
+	
+	<body id="top">
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+			<!-- Left Control -->
+			<div class="sb-toggle-left navbar-left">
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+			</div><!-- /.sb-control-left -->
+			
+			<!-- Right Control -->
+			<div class="sb-toggle-right navbar-right">
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+				<div class="navicon-line"></div>
+			</div><!-- /.sb-control-right -->
+			
+			<div class="container">
+				<!-- Logo -->
+				<div id="logo" class="navbar-left">
+					<a href="index-2.html"><img src="images/slidebars-logo%402x.png" alt="Slidebars Logo" width="118" height="40"></a>
+				</div><!-- /#logo -->
+				
+				<!-- Menu -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index-2.html">Home</a></li>
+					<li><a href="index.html#download">Download</a></li>
+					<li><a href="usage.html">Usage</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a id="top-arrow" href="#top">^</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- Site -->
+		<div id="sb-site">
+		
+			<!-- Manhattan -->
+			<!--<div id="manhattan">
+				<a href="http://www.adchsm.me/manhattan/">
+					<div id="mhtn-img"></div>
+					<p class="lead">Check out Manhattan, my latest project. A clean, lightweight and customisable CSS grid.</p>
+				</a>
+			</div>-->
+		
+			<!-- Site -->
+			<div class="container">
+			
+				<!-- Bisma -->
+				<div id="bisma" class="row">
+					<div class="col-xs-12 col-sm-6">
+						<img src="images/meet-bisma.png" alt="Meet Bisma" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<h2>Meet Bisma</h2>
+						<p class="lead">A beautiful, modern WordPress theme.</p>
+						<p>My premium WordPress theme featuring Slidebars is now available. I set out to create a clean, focused theme that provides a consistent experience for users across all platforms and devices. Bisma prioritizes your content, equipping your website with a superior level of readability and usability.</p>
+						<p><a href="https://www.mojomarketplace.com/item/bisma-a-beautiful-modern-wordpress-theme" class="btn btn-default">Purchase Bisma</a> <a class="btn btn-default" href="http://www.adchsm.me/bisma/">Preview Bisma</a></p>
+					</div>
+				</div>
+			
+			
+				<div class="row">
+					<div id="content" class="col-xs-12 col-sm-9">						
+<!-- Usage -->
+<div id="usage">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>Usage</h1>
+		</div><!-- /.col-xs-12 -->
+	</div><!-- /.row -->
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<p class="lead">Implementing Slidebars into your project is easy. First of all, you'll need to <a href="index.html#download">download Slidebars</a>.</p>
+			
+			<h2>Basic Steps</h2>
+			<p>These are the basic steps in order to get Slidebars working on your site. There are also more <a href="#in-depth">in-depth</a> descriptions and <a href="#api">API</a> usage further down the page.</p>
+			<ol>
+				<li>Add to your <a href="#viewport">meta viewport tag</a> to your head.</li>
+				<li>Wrap your entire page design in an element with id <a href="#site-container"><code>#sb-site</code></a>.</li>
+				<li>Create elements for your Slidebars, giving them a base class of <a href="#slidebars"><code>.sb-slidebar</code></a>.</li>
+				<li>Set the side of your Slidebars by adding <a href="#slidebars">modifier classes</a>.</li>
+				<li>Add <a href="#control-classes">control classes</a> to elements to use the Slidebars.</li>
+				<li>Include <a href="#includes">jQuery</a>, <a href="#includes">slidebars.min.js</a> and <a href="#includes">slidebars.min.css</a> in your pages.</li>
+				<li>Call the <a href="#initiate"><code>$.slidebars()</code></a> method.</li>
+			</ol>
+			
+			<h3>Translated Instructions</h3>
+			<p><a href="http://coliss.com/articles/build-websites/operation/javascript/jquery-plugin-slidebars.html">日本手順</a></p>
+			
+			<h2>Basic Template</h2>
+			<p>If your just starting, here is a bare minimum template to help. This file is included with the <a href="index.html#download">download</a>.</p>
+			
+			<pre><code class="prettyprint">&lt;!doctype html&gt;<br>&lt;html&gt;<br>  &lt;head&gt;<br>    &lt;title&gt;Slidebars Basic Template&lt;/title&gt;<br>    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;<br><br>    &lt;!-- Slidebars CSS --&gt;<br>    &lt;link rel="stylesheet" href="path/to/slidebars.min.css"&gt;<br>  &lt;/head&gt;<br><br>  &lt;body&gt;<br>    &lt;div id="sb-site"&gt;<br>      &lt;!-- Your main site content. --&gt;<br>    &lt;/div&gt;<br><br>    &lt;div class="sb-slidebar sb-left"&gt;<br>      &lt;!-- Your left Slidebar content. --&gt;<br>    &lt;/div&gt;<br><br>    &lt;div class="sb-slidebar sb-right"&gt;<br>      &lt;!-- Your right Slidebar content. --&gt;<br>    &lt;/div&gt;<br><br>    &lt;!-- jQuery --&gt;<br>    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;<br><br>    &lt;!-- Slidebars --&gt;<br>    &lt;script src="path/to/slidebars.min.js"&gt;&lt;/script&gt;<br>    &lt;script&gt;<br>      (function($) {<br>        $(document).ready(function() {<br>          $.slidebars();<br>        });<br>      }) (jQuery);<br>    &lt;/script&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+		
+			<h2 id="in-depth">In Depth Instructions</h2>
+	
+			<h3 id="viewport">01) Viewport</h3>
+			<p>You'll need to include the meta viewport tag in your <code>&lt;head&gt;</code> to ensure your page renders correctly.</p>
+			<pre><code class="prettyprint">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</code></pre>
+						
+			<h3 id="site-container">02) Site Container</h3>
+			<p>All of your site content (except Slidebars) should be wrapped in an element with id <code>#sb-site</code> which should be a direct child of the <code>&lt;body&gt;</code>.</p>
+			<pre class="pull-left"><code class="prettyprint">&lt;div id="sb-site"&gt;<br>  &lt;!-- Your main site content. --&gt;<br>&lt;/div&gt;</code></pre><div class="clearfix"></div>
+			
+			<h3 id="slidebars">03) Adding the Slidebars</h3>
+			<p>Each Slidebar should be direct child of the <code>&lt;body&gt;</code> and must have a base class of <code>.sb-slidebar</code> and a modifer class to set its side.</p>
+			<pre class="pull-left"><code class="prettyprint">&lt;div class="sb-slidebar sb-left"&gt;<br>  &lt;!-- Your left Slidebar content. --&gt;<br>&lt;/div&gt;</code></pre><div class="clearfix"></div>
+			
+			<h4>Base Class</h4>
+			
+			<p>Add base class <code>.sb-slidebar</code> to all Slidebars.</p>
+			
+			<h4 id="modifier-classes">Modifier Classes</h4>		
+			
+			<p>You can add modifier classes to your Slidebars to alter their behaviour and style. Each Slidebar must have a side set.</p>
+			<p><code>.sb-left</code> Sets the Slidebar to the left hand side.</p>
+			<p><code>.sb-right</code> Sets the Slidebar to the right hand side.</p>
+			<p><code>.sb-static</code> Unfixes the Slidebar so it scrolls naturally with the site. <span class="text-info">Introduced in version 0.8</span></p>
+			<p><code>.sb-style-push</code> Slidebar is located off-canvas and pushes the site across when opened. <span class="text-info">Introduced in version 0.9</span></p>
+			<p><code>.sb-style-overlay</code> Slidebar is located off-canvas and overlays the site when opened. <span class="text-info">Introduced in version 0.9</span></p>
+			<p><code>.sb-width-thin</code> An adaptive width, 15% thinner than the standard width. <span class="text-info">Introduced in version 0.9</span></p>
+			<p><code>.sb-width-wide</code> An adaptive width, 15% wider than the standard width. <span class="text-info">Introduced in version 0.9</span></p>
+			
+			<h4 id="custom-widths">Custom Widths <small class="text-info">Introduced in version 0.8</small></h4>
+			<p>To set a custom width for a Slidebar, add class <code>.sb-width-custom</code> and pass a width as a data attribute <code>data-sb-width</code>. You can pass a pixel width for a fixed layout, or a percentage for fluid. See example below:</p>
+			
+			<pre class="pull-left"><code class="prettyprint">&lt;div class="sb-slidebar sb-left sb-width-custom" data-sb-width="15%"&gt;<br>  &lt;!-- Your left Slidebar content. --&gt;<br>&lt;/div&gt;</code></pre><div class="clearfix"></div>
+			
+			<p><code>.sb-momentum-scrolling</code> Take advantage of iOS native smooth scrolling by adding this to a Slidebar. <span class="text-info">Introduced in version 0.10</span></p>
+			
+			<h3 id="control-classes">04) Add Control Classes</h3>
+			<p>There are optional classes which when applied to elements, can be used control the Slidebars. If you do not wish to use these, you can set your own elements to control the Slidebars using the <a href="#api">API</a>.</p>
+			
+			<p><code>.sb-toggle-left</code> can be used to toggle the left Slidebar. If clicked when the Slidebar is closed, it will open, if clicked when open, it will close.</p>
+			
+			<p><code>.sb-toggle-right</code> can be used to toggle the right Slidebar. If clicked when the Slidebar is closed, it will open, if clicked when open, it will close.</p>
+			
+			<p><code>.sb-open-left</code> can be used to open the left Slidebar when clicked.</p>
+			
+			<p><code>.sb-open-right</code> can be used to open the right Slidebar when clicked.</p>
+			
+			<p><code>.sb-close</code> can be used to close either Slidebar when clicked.</p>
+			
+			<div class="alert alert-info">
+				If you add the closing class to a link, or parent of a link within a Slidebar, the Slidebar will close before following the link.
+			</div>
+			
+			<h3 id="includes">05) Including Core Files</h3>
+			<p>You should include <span class="text-primary">slidebars.min.css</span> or <span class="text-primary">slidebars.css</span> in the <code>&lt;head&gt;</code> of your document. You should include this before your own stylesheets.</p>
+			
+			<pre><code class="prettyprint">&lt;link rel="stylesheet" href="path/to/slidebars.min.css"&gt;</code></pre>
+			
+			<p>Before your closing <code>&lt;/body&gt;</code> tag, you need to include <a href="http://jquery.com/">jQuery</a> (1.8+), followed by either <span class="text-primary">slidebars.min.js</span> or <span class="text-primary">slidebars.min.js</span>.</p>
+			
+			<pre><code class="prettyprint">&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;<br>&lt;script src="path/to/slidebars.min.js"&gt;&lt;/script&gt;</code></pre>
+			
+			<h3 id="initiate">06) Initiate Slidebars</h3>
+			<p>After including jQuery and Slidebars, you need to call <code>$.slidebars()</code> to start it. You may copy and paste this code.</p>
+			
+			<pre><code class="prettyprint">&lt;script&gt;<br>  (function($) {<br>    $(document).ready(function() {<br>      $.slidebars();<br>    });<br>  }) (jQuery);<br>&lt;/script&gt;</code></pre>
+			
+			<h2 id="options">Options</h2>
+			<p>There are a couple of options which you can set when initiating Slidebars.</p>
+			<pre><code class="prettyprint">&lt;script&gt;<br>  (function($) {<br>    $(document).ready(function() {<br>      $.slidebars({<br>        siteClose: true, // true or false<br>        disableOver: 480, // integer or false<br>        hideControlClasses: true, // true or false<br>        scrollLock: false // true or false<br>      });<br>    });<br>  }) (jQuery);<br>&lt;/script&gt;</code></pre>
+			
+			<p><code>siteClose</code> Enables closing of a Slidebar by clicking on the site. Options: true, false. Default: true. <span class="text-info">Introduced in version 0.7.1</span></p>
+			<p><code>disableOver</code> Disable Slidebars over specified screen width. Options: integer, false. Default: false. <span class="text-info">Introduced in version 0.8</span></p>
+			<p><code>hideControlClasses</code> Hide Slidebar control classes over width specified in <code>disableOver</code>. Options: true, false. Default: false.  <span class="text-info">Introduced in version 0.8</span></p>
+			<p><code>scrollLock</code> Prevent site content scrolling whilst a Slidebar is open. Options: true, false. Default: false.  <span class="text-info">Introduced in version 0.10</span></p>
+			
+			<h2 id="api">API</h2>
+			<p>Slidebars has a few API methods. You'll need to create your own instance of Slidebars when initiating the plugin. You can then use the following to control your Slidebars:</p>
+			<div class="alert alert-info">
+				As of version 0.10 all Slidebars API methods are prefixed with .slidebars
+			</div>
+			
+			<p><code>.slidebars.open(side)</code> Opens either Slidebar, specify the side: .open('left') or .open('right')</p>
+			<p><code>.slidebars.toggle(side)</code> Toggles either Slidebar, specify the side: .toggle('left') or .toggle('right')</p>
+			<p><code>.slidebars.close()</code> Closes whichever Slidebar is open.</p>
+			<p><code>.slidebars.init</code> Returns true if Slidebars has been initiated and is operating. <span class="text-info">Introduced in version 0.9</span></p>
+			<p><code>.slidebars.active(side)</code> Returns true if Slidebar is open, specify a side: .active('left') or .active('right') <span class="text-info">Introduced in version 0.9</span></p>
+			<p><code>.slidebars.destroy(side)</code> Removes Slidebar from the DOM, specify a side: .destroy('left') or .destroy('right') <span class="text-info">Introduced in version 0.10</span></p>
+			
+			<p>Here is an example of initiating Slidebars for use with the API:</p>
+			
+			<pre><code class="prettyprint">&lt;script&gt;<br>  (function($) {<br>    $(document).ready(function() {<br>      var mySlidebars = new $.slidebars();<br>      $('.my-button').on('click', function() {<br>        mySlidebars.slidebars.open('left');<br>      });<br>      $('.my-other-button').on('click', function() {<br>        mySlidebars.slidebars.toggle('right');<br>      });<br>      $('.my-third-button').click(mySlidebars.slidebars.close);<br>    });<br>  }) (jQuery);<br>&lt;/script&gt;</code></pre>
+			
+			<h2 id="animation-class">Animation Class</h2>
+			
+			<p>You can add class <code>.sb-slide</code> to other elements you wish to slide. This is useful if you have elements with <a href="issues/fixed-position.html">fixed positions</a>, such as a top navigation bar.</p>
+			
+			<h2 id="helper-classes">Helper Classes</h2>
+			<p>Slidebars adds a few classes which can aid you when styling your site.</p>
+			
+			<p><code>html.sb-init</code> is present when Slidebars has been initiated and is running. <span class="text-info">Introduced in version 0.8</span></p>
+			
+			<p><code>html.sb-active</code> is present when either Slidebar is open.</p>
+			
+			<p><code>html.sb-active-left</code> is present when the left Slidebar is open.</p>
+			
+			<p><code>html.sb-active-right</code> is present when the right Slidebar is open.</p>
+			
+			<p><code>html.sb-android</code> is present when Android Browser version 2.* is being used. You can use this to unfix elements with position fixed. <span class="text-info">Depreciated as of 0.9, see below.</span></p>
+			
+			<p><code>html.sb-static</code> is present when Android Browser &lt; 3 or iOS &lt; 5 is being used. You can use this to unfix elements with a fixed position. <span class="text-info">Introduced in version 0.9</span></p>
+			
+			<p>Apply class <code>.sb-disable-close</code> to a link within a Slidebar to prevent it from closing on click. <span class="text-info">Depreciated as of 0.10.</span></p>
+			
+		</div><!-- /.col-xs-12 -->
+	</div><!-- /.row -->
+</div><!-- /#usage -->
+
+					</div><!-- /#content-->
+					
+					<div id="adverts" class="col-xs-12 col-sm-3">
+						<div class="advert">
+							<script type="text/javascript">
+							  ( function() {
+							    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+							    var unit = {"calltype":"async[2]","publisher":"adchsm","width":300,"height":150,"sid":"Chitika Default"};
+							    var placement_id = window.CHITIKA.units.length;
+							    window.CHITIKA.units.push(unit);
+							    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+							}());
+							</script>
+							<script type="text/javascript" src="../../cdn.chitika.net/getads.js" async></script>
+						</div>
+						
+						<div class="advert pull-left">
+							<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+							<!-- Slidebars -->
+							<ins class="adsbygoogle"
+							     style="display:inline-block;width:256px;height:116px"
+							     data-ad-client="ca-pub-7022862816626393"
+							     data-ad-slot="7692326661"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div><div class="clearfix"></div>
+						
+						<!-- Dreamhost Ads -->
+						<a id="dreamhost" href="http://www.dreamhost.com/r.cgi?678849">
+							<img src="../../images.dreamhost.com/rewards/300x250-Sunny2.png" alt="DreamHost" class="img-responsive advert">
+						</a>
+					</div>
+				
+				</div><!-- /.row -->
+				
+				<footer>
+					<div class="row">
+						<div class="col-xs-12">
+							<small>Slidebars &copy; 2013 - 2014 <a href="http://www.adchsm.me/">Adam Smith</a></small>
+						</div>
+					</div>
+				</footer>
+			
+			</div><!-- /.container -->
+		</div><!-- /#sb-site -->
+		
+		<!-- Slidebars -->
+		<div class="sb-slidebar sb-left">
+	<nav>
+		<ul class="sb-menu">
+			<li><img src="images/slidebars-logo-white%402x.png" alt="Slidebars" width="118" height="40"></li>
+			<li class="sb-close"><a href="index-2.html">Home</a></li>
+			<li class="sb-close"><a href="index.html#download">Download</a></li>
+			<li class="sb-close"><a href="usage.html">Usage</a></li>
+			<li class="sb-close"><a href="usage.html#api">API</a></li>
+			<li class="sb-close"><a href="compatibility.html">Compatibility</a></li>
+			<li class="sb-close"><a href="issues.html">Issues</a></li>
+			<li class="sb-close"><a href="contact.html">Contact</a></li>
+			<li class="sb-close"><a class="github" href="https://github.com/adchsm/Slidebars">Github</a></li>
+			<li class="sb-close"><span class="sb-open-right">About the Author</span></li>
+			<li class="sb-close"><small>Slidebars &copy; 2014 Adam Smith</small></li>
+		</ul>
+	</nav>
+</div><!-- /.sb-left --><div class="sb-slidebar sb-right sb-style-overlay">
+	<aside id="about-me">
+		<img class="img-circle img-responsive img-me" width="150" height="150" src="images/me%402x.jpg" alt="Profile Picture">
+		<h3>Hello, I'm Adam.</h3>
+		<p>I'm a web designer and front-end developer based in Barcelona. I offer bespoke web tailoring and themes for WordPress. For more info you can:</p>
+		<ul class="list-unstyled">
+			<li class="sb-close"><a href="http://www.adchsm.me/">Visit my site</a></li>
+			<li class="sb-close"><a href="https://twitter.com/adchsm">Follow me on Twitter</a></li>
+			<li class="sb-close"><a href="http://www.adchsm.me/mailing.php">Sign up to my mailing list</a></li>
+		</ul>
+	</aside>
+</div><!-- /.sb-right -->
+		<!-- Scripts -->
+		<!-- jQuery -->
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Slidebars -->
+		<script src="scripts/slidebars/slidebars.min.js"></script>
+		<script>
+			(function($) {
+				$(document).ready(function() {
+					// Initiate Slidebars
+					$.slidebars();
+				});
+			}) (jQuery);
+		</script>
+		
+		<!-- Further Tracking -->
+		<script>
+			(function($) {
+				$(document).ready(function() {
+					// Downloads
+					// 0.10.3
+					$('a.download-0103').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.10.3', {'nonInteraction': 1});
+					});
+					// 0.10.2
+					$('a.download-0102').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.10.2', {'nonInteraction': 1});
+					});
+					// 0.10.1
+					$('a.download-0101').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.10.1', {'nonInteraction': 1});
+					});
+					// 0.10
+					$('a.download-010').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.10', {'nonInteraction': 1});
+					});
+					// 0.9.4
+					$('a.download-094').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.9.4', {'nonInteraction': 1});
+					});
+					// 0.9
+					$('a.download-09').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.9', {'nonInteraction': 1});
+					});
+					// 0.8.2
+					$('a.download-082').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.8.2', {'nonInteraction': 1});
+					});
+					// 0.8.1
+					$('a.download-081').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.8.1', {'nonInteraction': 1});
+					});
+					// 0.8
+					$('a.download-08').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.8', {'nonInteraction': 1});
+					});
+					// 0.7.1
+					$('a.download-071').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.7.1', {'nonInteraction': 1});
+					});
+					// 0.7
+					$('a.download-07').on('click', function() {
+						ga('send', 'event', 'Download', 'Slidebars', '0.7', {'nonInteraction': 1});
+					});
+					// Github
+					$('a.github').on('click', function() {
+						ga('send', 'event', 'External Link', 'GitHub', {'nonInteraction': 1});
+					});
+					// Dreamhost
+					$('a#dreamhost').on('click', function() {
+						ga('send', 'event', 'External Link', 'DreamHost', {'nonInteraction': 1});
+					});
+					// Open Left Slidebar
+					$('.sb-open-left, .sb-toggle-left').on('touchend click', function() {
+						ga('send', 'event', 'Function', 'Open Slidebar', 'Open Left Slidebar', {'nonInteraction': 1});
+					});
+					// Open Right Slidebar
+					$('.sb-open-right, .sb-toggle-right').on('touchend click', function() {
+						ga('send', 'event', 'Function', 'Open Slidebar', 'Open Right Slidebar', {'nonInteraction': 1});
+					});
+				});
+			}) (jQuery);
+		</script>
+		
+		<!-- Prettify -->
+		<script src="../../google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+		
+		<!-- Smooth Page Scrolling -->
+		<script>
+			(function($) {
+				$(document).ready(function() {
+					$('a[href^="#"]').on('touchend click', function(e) {
+						e.preventDefault();
+						var id = $(this).attr("href");
+						var offset = 70;
+						var target = $(id).offset().top - offset;
+						
+						$('html, body').animate({scrollTop:target}, 500);
+					});
+				});
+			}) (jQuery);
+		</script>
+		
+		<!-- Form Validation -->
+		<script src="scripts/form-validation.js"></script>
+	</body>
+
+<!-- Mirrored from plugins.adchsm.me/slidebars/usage.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jun 2015 14:54:39 GMT -->
+</html>

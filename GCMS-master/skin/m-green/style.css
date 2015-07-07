@@ -1,0 +1,254 @@
+/**
+ Name: MaxSite Green
+ Description: Template ดัดแปลงมาจาก Maxsite มีเพื่อนสมาชิกบางครส่งรูปบาร์มาให้ ผมเลยปรับปรุงอีกนิดหน่อย และเปลี่ยนไปใช้ CSS3 แทน
+ Author: Goragod.com
+ Author URI: http://www.goragod.com
+ Responsive
+*/
+body {
+	background-image: url(img/bg.gif);
+	background-repeat: repeat;
+}
+.wrapper_bg_color, .header_bg_color, .footer_bg_color {
+	background-color: #FFF;
+}
+.wrapper_top_bg {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.menu_wrapper {
+	padding-bottom: 10px;
+}
+.footer {
+	padding: 10px;
+	color: #0066FF;
+	text-align: center;
+}
+.footer a {
+	font-weight: bold;
+	color: inherit;
+}
+.topmenu {
+	background-image: url(img/menu_bg.png);
+	background-repeat: repeat-x;
+	background-position: top center;
+	color: #0066FF;
+}
+.topmenu > ul > li > a > span {
+	padding: 7px 0;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.topmenu > ul > li.home > a > span {
+	background-image: url(img/home.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #FFF;
+}
+@media only screen and (max-width: 960px) {
+	.topmenu > ul > li.home > a > span {
+		background-image: url();
+		color: #0066FF;
+	}
+}
+.topmenu ul > li:hover > a, .topmenu > ul > li.hover > a, .topmenu > ul > li.select > a {
+	color: #000;
+}
+.topmenu li.select > a, .topmenu li:hover > a, .topmenu li.hover > a, .sidemenu li.select > a, .sidemenu li:hover > a, .sidemenu li.hover > a {
+	background-color: transparent;
+}
+.sidemenu ul > li {
+	color: #D8FF00;
+	font-weight: bold;
+}
+.sidemenu ul > li {
+	background-color: #17A991;
+	border-left-width: 3px;
+	border-top-width: 1px;
+	border-top-color: rgba(255,255,255,0.5);
+	border-left-color: rgba(0,0,0,0.2);
+	border-style: solid none none solid;
+}
+.sidemenu ul > li:hover {
+	color: #FFF;
+	border-left-color: rgba(0,0,0,0.5)
+}
+.sidemenu ul > li:hover > a {
+	background-color: rgba(0,0,0,0.2);
+}
+.topmenu > ul ul, .sidemenu > ul ul {
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	background-color: #FFF;
+}
+.widget_bdr .widget_body {
+	border-width: 1px;
+	border-color: #33b9a3;
+	border-style: none solid solid;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	padding: 5px;
+}
+.homepage .widget header {
+	background: url(img/bar.png);
+}
+.homepage .widget header.bar2 {
+	background: url(img/bar2.png);
+}
+.homepage .widget header.bartop {
+	background: url(img/bartop.png);
+}
+.homepage .widget header.bartop > h2 {
+	padding-left: 80px;
+	color: inherit;
+}
+.sidebar .widget header {
+	display: block;
+	position: relative;
+	margin-left: -20px;
+	padding: 5px 0;
+	background: #33b9a3;
+	background: -moz-linear-gradient(left,  #33b9a3 0%, #17a991 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#33b9a3), color-stop(100%,#17a991));
+	background: -webkit-linear-gradient(left,  #33b9a3 0%,#17a991 100%);
+	background: -o-linear-gradient(left,  #33b9a3 0%,#17a991 100%);
+	background: -ms-linear-gradient(left,  #33b9a3 0%,#17a991 100%);
+	background: linear-gradient(to right,  #33b9a3 0%,#17a991 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b9a3', endColorstr='#17a991',GradientType=1 );
+}
+.sidebar .widget header:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	bottom: -10px;
+	border-width: 0 10px 10px 0;
+	border-color: transparent #0d6e5d transparent transparent;
+	left: 0;
+}
+.widget header > h2 {
+	font-size: 140%;
+	font-family: Arial;
+	color: #FFF;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2);
+	padding: 0 10px 0 60px;
+	line-height: 32px;
+}
+.sidebar .widget header > h2 {
+	border-width: 2px;
+	border-style: dashed none;
+	border-color: rgba(255, 255, 255, 0.5);
+	padding-left: 20px;
+	line-height: inherit;
+}
+.homepage .sidebar .widget header {
+	margin-left: -10px;
+}
+.xsidebar .widget header {
+	margin-left: -10px;
+}
+.login p {
+	padding: 2px 0;
+}
+.login .head {
+	font-size: 90%;
+	text-align: center;
+}
+.login .title {
+	display: none;
+}
+.login .head > span {
+	color: #066;
+}
+.memberfrm a {
+	display: block;
+	line-height: 1.8em;
+}
+.breadcrumbs {
+	color: #CCC;
+}
+.bdr_content header > h3.icon-tags, .content .mainform legend > span, .content .member_section legend > span, .content .member_section h2 {
+	margin-bottom: 10px;
+	line-height: normal;
+	display: block;
+	font-weight: normal;
+	font-size: 140%;
+}
+.q .reaction, .r .reaction {
+	background-color: #EDF8ED;
+}
+#comment-list .r {
+	margin-bottom: 10px;
+}
+.content .document .bg1, .content .board .bg1, .content .download .bg1 {
+	background-color: #EEE;
+}
+.content .document .bg2, .content .board .bg2, .content .download .bg2 {
+	background-color: #FDEAFB;
+}
+.content .board a.topic, .content .document a.topic, .content .download a.topic {
+	color: #0066FF;
+}
+.counter-box .col {
+	background-color: #F9F9F9;
+}
+.content .bdr_content {
+	border-width: 1px;
+	border-color: #EEE;
+	border-style: solid;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.widget_share {
+	position: fixed;
+	top: 50%;
+	margin-top: -52px;
+	left: 0;
+	width: 31px;
+	border-width: 1px;
+	border-style: solid solid solid none;
+	border-color: #000;
+	-moz-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 2;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+body .widget_share a {
+	padding: 0;
+	margin: 5px;
+	float: left;
+	width: 16px;
+	height: 16px;
+	color: #666;
+}
+.widget_share a:hover {
+	color: #FFF;
+}
+.homepage header > h2:before {
+	display: none;
+}
+.tab > ul > li.select > a {
+	font-weight: bold;
+}
+.homepage .next {
+	text-align: right;
+	margin: 5px 0 0;
+}
+#GModal_modaldiv > .modaldiv form {
+	padding: 10px;
+	background-color: #FFF;
+}
+form dl.info {
+	background-color: #FBFDFF;
+	border: 1px dashed #DDD;
+	color: #000;
+	line-height: 1.8em;
+	margin: 5px 0;
+	padding: 10px;
+}

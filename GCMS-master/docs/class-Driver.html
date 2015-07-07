@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Driver</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Css.html">
+						Css					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Js.html">
+						Js					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Menu.html">
+						Menu					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Site.html">
+						Site					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Driver.html">Driver</a></li>
+				<li><a href="class-MYSQL_driver.html">MYSQL_driver</a></li>
+				<li><a href="class-MYSQLI_driver.html">MYSQLI_driver</a></li>
+				<li><a href="class-PDO_driver.html">PDO_driver</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-_autoload.html">_autoload</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Driver</h1>
+
+
+	<div class="description">
+	<p>Database Driver Class</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-PDO_driver.html">PDO_driver</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Copyright:</b>
+				2015 Goragod.com<br>
+				<b>License:</b>
+				<a href="http://gcms.in.th/license/">http://gcms.in.th/license/</a><br>
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Driver.html#11-289" title="Go to source code">core/database/driver.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Driver.html#31-41" title="Go to source code">__construct</a>( <span>array <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$params</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-Driver.html#42-47" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			<p>จบ class.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>จบ class.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection" id="_connection">
+
+		<td class="attributes"><code>
+			 public 
+
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection">#</a>
+		<code><a href="source-class-Driver.html#48-55" title="Go to source code">connection</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น อ่านค่า resource ID ของการเชื่อมต่อปัจจุบัน.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น อ่านค่า resource ID ของการเชื่อมต่อปัจจุบัน.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					resource
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="databaseExists" id="_databaseExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_databaseExists">#</a>
+		<code><a href="source-class-Driver.html#56-65" title="Go to source code">databaseExists</a>( <span>string <var>$database</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$database</var></dt>
+					<dd>ชื่อฐานข้อมูล</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>คืนค่า true หากมีฐานข้อมูลนี้อยู่ ไม่พบคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tableExists" id="_tableExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tableExists">#</a>
+		<code><a href="source-class-Driver.html#66-75" title="Go to source code">tableExists</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น ตรวจสอบว่ามีตาราง $table หรือไม่.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น ตรวจสอบว่ามีตาราง $table หรือไม่.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>คืนค่า true หากมีตารางนี้อยู่ ไม่พบคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fieldExists" id="_fieldExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fieldExists">#</a>
+		<code><a href="source-class-Driver.html#76-101" title="Go to source code">fieldExists</a>( <span>string <var>$table</var></span>, <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น ตรวจสอบว่ามีฟิลด์ $field ในตาราง $table หรือไม่.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น ตรวจสอบว่ามีฟิลด์ $field ในตาราง $table หรือไม่.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$field</var></dt>
+					<dd>ชื่อฟิลด์</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>คืนค่า true หากมีฟิลด์นี้อยู่ ไม่พบคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRec" id="_getRec">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRec">#</a>
+		<code><a href="source-class-Driver.html#102-115" title="Go to source code">getRec</a>( <span>string <var>$table</var></span>, <span>integer <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>สอบถามข้อมูลที่ $id เพียงรายการเดียว.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สอบถามข้อมูลที่ $id เพียงรายการเดียว.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$id</var></dt>
+					<dd>id ที่ต้องการอ่าน</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|boolean<br>พบคืนค่ารายการที่พบเพียงรายการเดียว ไม่พบคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Driver.html#116-129" title="Go to source code">delete</a>( <span>string <var>$table</var></span>, <span>integer <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นลบข้อมูล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นลบข้อมูล.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$id</var></dt>
+					<dd>id ที่ต้องการลบ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>สำเร็จ คืนค่าว่าง ไม่สำเร็จคืนค่าข้อความผิดพลาด
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Driver.html#130-144" title="Go to source code">query</a>( <span>string <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			<p>ประมวลผลคำสั่ง SQL ที่ไม่ต้องการผลลัพท์ เช่น CREATE INSERT UPDATE.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ประมวลผลคำสั่ง SQL ที่ไม่ต้องการผลลัพท์ เช่น CREATE INSERT UPDATE.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer|boolean<br>สำเร็จ คืนค่าจำนวนแถวที่ทำรายการ มีข้อผิดพลาดคืนค่า false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="customQuery" id="_customQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_customQuery">#</a>
+		<code><a href="source-class-Driver.html#145-160" title="Go to source code">customQuery</a>( <span>string <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			<p>ประมวลผลคำสั่ง SQL สำหรับสอบถามข้อมูล คืนค่าผลลัพท์เป็นแอเรย์ของข้อมูลที่ตรงตามเงื่อนไข.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ประมวลผลคำสั่ง SQL สำหรับสอบถามข้อมูล คืนค่าผลลัพท์เป็นแอเรย์ของข้อมูลที่ตรงตามเงื่อนไข.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>query string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>คืนค่าผลการทำงานเป็น record ของข้อมูลทั้งหมดที่ตรงตามเงื่อนไข ไม่พบข้อมูลคืนค่าเป็น array ว่างๆ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lastId" id="_lastId">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lastId">#</a>
+		<code><a href="source-class-Driver.html#161-173" title="Go to source code">lastId</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>อ่าน ID ล่าสุดของตาราง สำหรับตารางที่มีการกำหนด Auto_increment ไว้.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่าน ID ล่าสุดของตาราง สำหรับตารางที่มีการกำหนด Auto_increment ไว้.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>คืนค่า id ล่าสุดของตาราง
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unLock" id="_unLock">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unLock">#</a>
+		<code><a href="source-class-Driver.html#174-181" title="Go to source code">unLock</a>( )</code>
+
+		<div class="description short">
+			<p>ยกเลิกการ Lock ตารางทั้งหมดที่ได้ปิดกันไว้.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ยกเลิกการ Lock ตารางทั้งหมดที่ได้ปิดกันไว้.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>สำเร็จ คืนค่า true
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReadLock" id="_setReadLock">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReadLock">#</a>
+		<code><a href="source-class-Driver.html#192-201" title="Go to source code">setReadLock</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>Lock ตาราง สำหรับการอ่าน.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Lock ตาราง สำหรับการอ่าน.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>คืนค่า true ถ้าสำเร็จ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWriteLock" id="_setWriteLock">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWriteLock">#</a>
+		<code><a href="source-class-Driver.html#202-211" title="Go to source code">setWriteLock</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>Lock ตาราง สำหรับการเขียน.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Lock ตาราง สำหรับการเขียน.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>คืนค่า true ถ้าสำเร็จ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sql_clean" id="_sql_clean">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sql_clean">#</a>
+		<code><a href="source-class-Driver.html#212-225" title="Go to source code">sql_clean</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd>ข้อความ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>คืนค่าข้อความ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sql_quote" id="_sql_quote">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sql_quote">#</a>
+		<code><a href="source-class-Driver.html#226-235" title="Go to source code">sql_quote</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd>ข้อความ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>คืนค่าข้อความ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sql_trim" id="_sql_trim">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sql_trim">#</a>
+		<code><a href="source-class-Driver.html#236-254" title="Go to source code">sql_trim</a>( <span>mixed <var>$array</var></span>, <span>string <var>$key</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>ลบช่องว่างด้านหัวและท้ายของความ กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบช่องว่างด้านหัวและท้ายของความ กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลง \ เป็น &#92;.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd>ตัวแปรเก็บข้อความ</dd>
+					<dt><var>$key</var></dt>
+					<dd>key ของ $array เช่น $array[$key]</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>คืนค่าข้อความ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sql_trim_str" id="_sql_trim_str">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sql_trim_str">#</a>
+		<code><a href="source-class-Driver.html#255-273" title="Go to source code">sql_trim_str</a>( <span>mixed <var>$array</var></span>, <span>string <var>$key</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>ลบช่องว่างด้านหัวและท้ายของความ กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลงอักขระพิเศษต่างๆเป็นรหัส HTML เช่น &amp; แปลงเป็น &amp;.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบช่องว่างด้านหัวและท้ายของความ กรองอักขระพิเศษ ที่รับมาจาก INPUT และแปลงอักขระพิเศษต่างๆเป็นรหัส HTML เช่น &amp; แปลงเป็น &amp;.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd>ตัวแปรเก็บข้อความ</dd>
+					<dt><var>$key</var></dt>
+					<dd>key ของ $array เช่น $array[$key]</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>คืนค่าข้อความ
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query_count" id="_query_count">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query_count">#</a>
+		<code><a href="source-class-Driver.html#274-281" title="Go to source code">query_count</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น อ่านจำนวน query ทั้งหมดที่ทำงาน.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น อ่านจำนวน query ทั้งหมดที่ทำงาน.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-Driver.html#282-288" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			<p>close database.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>close database.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="dbdriver" id="$dbdriver">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#20" title="Go to source code"><var>$dbdriver</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$dbdriver" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="hostname" id="$hostname">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#21" title="Go to source code"><var>$hostname</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$hostname" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="username" id="$username">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#22" title="Go to source code"><var>$username</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$username" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="password" id="$password">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#23" title="Go to source code"><var>$password</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$password" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="dbname" id="$dbname">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#24" title="Go to source code"><var>$dbname</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$dbname" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="char_set" id="$char_set">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#25" title="Go to source code"><var>$char_set</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$char_set" class="anchor">#</a>
+				<code><span class="php-quote">'utf8'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="time" id="$time">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#26" title="Go to source code"><var>$time</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$time" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="connection" id="$connection">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#27" title="Go to source code"><var>$connection</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$connection" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="port" id="$port">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#28" title="Go to source code"><var>$port</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$port" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="error_message" id="$error_message">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#29" title="Go to source code"><var>$error_message</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$error_message" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="prefix" id="$prefix">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Driver.html#30" title="Go to source code"><var>$prefix</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$prefix" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#download-list > article {
+	margin-bottom: 5px;
+	display: block;
+	border-color: inherit;
+	border-width: 2px;
+	border-style: none none dotted none;
+	padding: 5px 0;
+	line-height: 1.8em;
+	overflow: hidden;
+}
+#download-list > article h6 {
+	display: inline;
+	margin-right: 5px;
+	font-size: 100%;
+	font-weight: bold;
+	border: none;
+}
+#download-list > article > * {
+	margin: 0;
+}
+#download-list > article > footer {
+	font-size: 90%;
+	font-style: italic;
+}
+#download-list > article > footer > span {
+	margin-right: 5px;
+}
+#download-list .icon-download:before {
+	color: #04C;
+	font-size: 1.6em;
+	vertical-align: bottom;
+}

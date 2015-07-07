@@ -1,0 +1,21 @@
+<div class=bdr_content>
+	<form id=forgot_frm class=main_frm method=post action="{WEBURL}/index.php">
+		<header><h2 class="cuttext icon-password">{LNG_FORGOT_TITLE}</h2></header>
+		<fieldset>
+			<div class=item>
+				<label for=forgot_email>{LNG_EMAIL}</label>
+				<span class="g-input icon-email"><input type=text name=forgot_email id=forgot_email title="{LNG_FORGOT_COMMENT}" autofocus></span>
+			</div>
+			<div class=comment id=result_forgot_email>{LNG_FORGOT_COMMENT}</div>
+		</fieldset>
+		<fieldset class="submit right">
+			<input type=submit class="button forgot" value="{LNG_FORGOT_SUBMIT}" title="{LNG_FORGOT_TITLE}">
+			<input type=hidden name=modal value={MODAL}>
+		</fieldset>
+	</form>
+</div>
+<script>
+	$G(window).Ready(function() {
+		new GForm('forgot_frm', '{WEBURL}/modules/member/recover.php').onsubmit(doFormSubmit);
+	});
+</script>

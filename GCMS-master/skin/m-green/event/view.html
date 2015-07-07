@@ -1,0 +1,28 @@
+<div class=bdr_content>
+	<header>
+		<h2>{TOPIC}</h2>
+		<nav class="breadcrumbs cuttext">
+			<ul>
+				{BREADCRUMS}
+				<li><a href="{DAYURL}">{DATE} {MONTH} {YEAR}</a></li>
+				<li><a href="{URL}">{TOPIC}</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id=event-day>
+		<div class=ecalendar>
+			<div>
+				<div class=year>{YEAR}</div>
+				<div class=date>{DATE}</div>
+				<div class=month>{MONTH}</div>
+			</div>
+		</div>
+		<div>
+			<p class=time><span class=color style="background-color:{COLOR}"></span><span>{LNG_TIME} {TIME} {LNG_TIME_DIGIT}</span></p>
+			<div class=detail>{DETAIL}</div>
+		</div>
+	</div>
+</div>
+<script>
+	inintIndex();
+</script>
