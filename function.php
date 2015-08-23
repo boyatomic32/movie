@@ -24,6 +24,17 @@ function get($url, $params=array())
 
 function post($url, $fields=array())
 {
+    	
+	$post = $fields; //print_r($pos);
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+	$response = curl_exec($ch);
+	
+	/*
+	$data = json_decode($response);	
+		
     $post_field_string = http_build_query($fields, '', '&');
     
     $ch = curl_init();
@@ -41,7 +52,7 @@ function post($url, $fields=array())
     curl_setopt($ch, CURLOPT_POST, true);
     
     $response = curl_exec($ch);
-    
+    */
     curl_close ($ch);
     
     return $response;

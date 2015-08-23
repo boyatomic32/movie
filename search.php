@@ -45,10 +45,15 @@ include 'header.php';
 			<?php 
 	    	if($count > 0){		
 	    		foreach ($data as $k2 => $value) {
-	    		$val2 = (array)$value;	    		
+	    		$val2 = (array)$value;	 
+				if(!empty($val2['url'])){
+					$url = base64_encode(str_replace('https://', 'seree-',$val2['url']));
+				}else{
+					$url = base64_encode(str_replace('https://', 'seree-',$val2['SD']));
+				}     		
 			?>
 			<div class="col-md-3">
-				<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=$val2['category'];?>&name=<?=str_replace(' ', '-', $val2['name']);?>">
+				<a href="javascript:void(0);" onclick="post('viewvideo.php',{id:<?=$val2['ImageID'];?>,name:'<?=$val2['name'];?>',by:'<?=$url;?>'});">
 					<div class="panel panel-primary">
 			            <div class="panel-heading">
 			              <h3 class="panel-title nowrap"><?=$val2['name'];?></h3>

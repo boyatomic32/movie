@@ -5,13 +5,16 @@
 				<ul class="sb-menu">
 					<li><img src="images/logo-doonungfree.png" alt="Slidebars" width="200" height="45"></li>
 					<li><a href="index.php">หน้าแรก</a></li>
-					<li><a href="category.php?cate=movienew">หนังมาใหม่</a></li>
-					<li><a href="category.php?cate=movietop">หนังยอดนิยม</a></li>					
-					<?php	          	
-			    	if(isset($menu)){
-			    		foreach ($menu as $k1 => $val1) {		    				
+					<li style="display: none;"><a href="category.php?cate=new">หนังมาใหม่</a></li>
+					<li style="display: none;"><a href="category.php?cate=top">หนังยอดนิยม</a></li>					
+					<?php
+					$url = "http://fmkonkhonradio.com/movies/api/index/key/boyatomic/type/group/";
+					$json = post($url);
+					$menu = json_decode($json);	          	
+			    	if(isset($menu->total) > 0){
+			    		foreach ($menu->items as $k1 => $val1) {		    				
 					?>
-	    			<li class="sb-close"><a href="category.php?cate=<?=$k1;?>"><?=$val1;?></a></li>
+	    			<li class="sb-close"><a href="category.php?cate=<?=$val1->categoryID;?>"><?=$val1->category_thai;?></a></li>
 	    			<?php
 						}
 					}

@@ -50,10 +50,17 @@ $limit = 12;
 	    	if(isset($data_new)){		
 	    		foreach ($data_new as $k2 => $value) {
 	    		$val2 = (array)$value;
-					if($k2 < $limit){	    		
+				if(!empty($val2['url'])){
+					$url = $val2['url'];
+				}else{
+					$url = $val2['SD'];
+				}
+				
+					if($k2 < $limit){
+							    		
 			?>
 				<div class="col-md-3">
-					<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>">
+					<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>&url=<?=$url;?>">
 						<div class="panel panel-primary">
 				            <div class="panel-heading">
 				              <h3 class="panel-title nowrap"><?=$val2['name'];?></h3>
@@ -79,10 +86,15 @@ $limit = 12;
 	    	if(isset($data_hot)){		
 	    		foreach ($data_hot as $k2 => $value) {
 	    		$val2 = (array)$value;
+	    		if(!empty($val2['url'])){
+					$url = $val2['url'];
+				}else{
+					$url = $val2['SD'];
+				}
 					if($k2 < $limit){	    		
 			?>
 				<div class="col-md-3">
-					<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>">
+					<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>&url=<?=$url;?>">
 						<div class="panel panel-primary">
 				            <div class="panel-heading">
 				              <h3 class="panel-title nowrap"><?=$val2['name'];?></h3>
@@ -112,10 +124,15 @@ $limit = 12;
 			<?php 
 	    	if(isset($val['data'])){		
 	    		foreach ($val['data'] as $k2 => $value) {
-	    		$val2 = (array)$value;	    		
+	    		$val2 = (array)$value;	 
+				if(!empty($val2['url'])){
+					$url = $val2['url'];
+				}else{
+					$url = $val2['SD'];
+				}   		
 			?>
 			<div class="col-md-3">
-				<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>">
+				<a href="viewvideo.php?id=<?=$val2['ImageID'];?>&cate=<?=str_replace(' ', '-', $val2['category']);?>&name=<?=str_replace(' ', '-', $val2['name']);?>&url=<?=$url;?>">
 					<div class="panel panel-primary">
 			            <div class="panel-heading">
 			              <h3 class="panel-title nowrap"><?=$val2['name'];?></h3>

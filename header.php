@@ -26,6 +26,28 @@
 		<meta property="og:image" content="http://doonungfree.tk/doonungfree.jpg">		
 		<link rel="icon" type="image/png" href="images/icons/64.png" sizes="64x64">
 		
+		<script type="text/javascript">
+			function post(path, params, method) {
+			    method = method || "post"; // Set method to post by default if not specified.
+			    var form = document.createElement("form");
+			    form.setAttribute("method", method);
+			    form.setAttribute("action", path);
+			
+			    for(var key in params) {
+			        if(params.hasOwnProperty(key)) {
+			            var hiddenField = document.createElement("input");
+			            hiddenField.setAttribute("type", "hidden");
+			            hiddenField.setAttribute("name", key);
+			            hiddenField.setAttribute("value", params[key]);
+			
+			            form.appendChild(hiddenField);
+			         }
+			    }
+			
+			    document.body.appendChild(form);
+			    form.submit();
+			}
+		</script>
 		
 	</head>
 	
